@@ -10,4 +10,9 @@ services: #services means the docker containers
     image: mongo
     environment:
       MONGO_INITDB_ROOT_USERNAME: testuser
-      MONGO_INITDB_ROOT_PASSWORD: password123@
+      MONGO_INITDB_ROOT_PASSWORD: password123
+    volumes:
+      - mongo-db:/data/db
+
+volumes:
+  mongo-db:
