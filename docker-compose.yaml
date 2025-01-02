@@ -6,3 +6,8 @@ services: #services means the docker containers
       - "3000:3000"
     env_file:
       - ./.env
+  mongodatabaseapp:
+    image: mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: testuser
+      MONGO_INITDB_ROOT_PASSWORD: password123@
