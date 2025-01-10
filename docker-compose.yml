@@ -1,0 +1,16 @@
+version: "3"
+services: #services means the docker containers
+  dockernodeapp:
+    build: .
+    ports:
+      - "3000:3000"
+#   mongodatabaseapp:
+#     image: mongo
+#     environment:
+#       MONGO_INITDB_ROOT_USERNAME: testuser
+#       MONGO_INITDB_ROOT_PASSWORD: password123
+#     volumes:
+#       - mongo-db:/data/db
+
+# volumes:
+#   mongo-db:
